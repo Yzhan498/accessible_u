@@ -248,25 +248,40 @@
                   <div id="error"></div>
 
                   <div class="required form-group">
-                    Name:
-                    <input type="text" name="name" class="form-control" />
+                    <label for="name">Name: *</label>
+                    <input id="name" type="text" name="name" class="form-control" autocomplete="name" required/>
                   </div>
                   <div class="required form-group">
-                    Email:
-                    <input type="text" name="email" class="form-control" />
+                    <label for="email">Email: *</label>
+                    <input id="email" type="email" name="email" class="form-control" autocomplete="email" required/>
                   </div>
                   <div class="form-group">
-                    Country:
-                    <input type="text" name="country" class="form-control" />
+                    <label for="country">Country:</label>
+                    <input type="text" name="country" id="country" class="form-control" autocomplete="country-name"/>
                   </div>
                   <div class="form-group">
                     <div>Desired major(s):</div>
                     <div class="" id="majors">
-                      <div class="major"><input type="checkbox"/> Computer Science </div>
-                      <div class="major"><input type="checkbox"/> Engineering </div>
-                      <div class="major"><input type="checkbox"/> Economics </div>
-                      <div class="major"><input type="checkbox"/> Physics </div>
-                      <div class="major"><input type="checkbox"/> Psychology </div>
+                      <div class="major">
+                        <label for="cs">Computer Science</label>
+                        <input type="checkbox" name="major_cs" id="cs"/>
+                      </div>
+                      <div class="major">                      
+                        <label for="eng">Engineering</label>
+                        <input type="checkbox" name="major_eng" id="eng"/>
+                      </div>
+                      <div class="major">
+                        <label for="eco">Economics</label>
+                        <input type="checkbox" name="major_econ" id="eco"/>
+                       </div>
+                      <div class="major">
+                        <label for="phy">Physics</label>
+                        <input type="checkbox" name="major_phy" id="phy"/>
+                       </div>
+                      <div class="major">
+                        <label for="psy">Psychology</label>
+                        <input type="checkbox" name="major_psy" id="psy"/>
+                       </div>
                     </div>
                   </div>
                   <div id="captcha">
