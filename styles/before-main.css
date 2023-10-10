@@ -49,6 +49,11 @@
   background: #333;
   color: #0FB338
 }
+
+.main-footer a{
+  background: #333;
+  color:#00471A
+}
 hr {
   border-bottom: 1px solid #999;
 }
@@ -64,7 +69,7 @@ p {
  *
  */
 a {
-  color: #07691A;
+  color: #00471A;
 	text-decoration: none;
 }
 /*
