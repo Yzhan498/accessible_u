@@ -22,6 +22,12 @@
   * Main menu
   */
 
+  .navbar-toggler {
+	background-color: #28a745;
+}
+.navbar-dark {
+	color: #fff;
+}
 .navbar-nav a:focus {
 	outline: 1px dotted white;
 }

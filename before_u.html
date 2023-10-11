@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Before - Accessible University Demo Site - Inaccessible Version</title>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -34,9 +34,10 @@
       </a>
     </div>
 
-    <div class="navbar navbar-expand-lg navbar-dark bg-dark bg-primary md-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-primary md-3">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -47,7 +48,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button"
-                  data-toggle="dropdown">
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   About
               </a>
               <ul class="dropdown-menu">
@@ -59,7 +60,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button"
-                  data-toggle="dropdown">
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Academics
               </a>
               <ul class="dropdown-menu">
@@ -71,7 +72,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button"
-                  data-toggle="dropdown">
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Admissions
               </a>
               <ul class="dropdown-menu">
@@ -88,12 +89,13 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
+            <label for="search-input" class="sr-only">Search</label>
             <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search">
-            <button class="btn btn-success my-2 my-sm-0" type="submit">Go</button>
+            <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
       </div>
-    </div>
+    </nav>
 
     <br/>
     <div class="container">
@@ -311,8 +313,8 @@
       <div class="main-footer p-5">
         <div class="container">
           <ul class="social float-right list-unstyled">
-            <li><a href="https://facebook.com"><img src="images/8675309-social-facebook.png" alt="FB"></a></li>
-            <li><a href="https://twitter.com"><img src="images/8675309-social-twitter.png" alt="TW"></a</li>
+            <li><a href="https://facebook.com"><img src="images/8675309-social-facebook.png" alt="Visit us on Facebook"></a></li>
+            <li><a href="https://twitter.com"><img src="images/8675309-social-twitter.png" alt="Visit us on Twitter"></a</li>
           </ul>
           <ul class="list-unstyled">
             <li><a href="#">Contact Us</a></li>
